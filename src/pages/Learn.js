@@ -7,10 +7,10 @@ const Learn = () => (
       Find all courses here and select which you want to take
     </p>
     <div className="mt-10">
-      <Link className="mx-10 border py-3 px-6 shadow-lg" to="learn/courses">
+      <Link className="mx-10 border py-3 px-6 shadow-lg" to="/learn/courses">
         Courses
       </Link>
-      <Link className="mx-10 border py-3 px-6 shadow-lg" to="learn/bundles">
+      <Link className="mx-10 border py-3 px-6 shadow-lg" to="/learn/bundles">
         Courses
       </Link>
     </div>
