@@ -4,11 +4,14 @@ import "./index.css";
 import Home from "./pages/Home";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Learn from "./pages/Learn";
 
 ReactDOM.render(
   <Router>
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="myapps" element={<Learn />} />
+      <Route path="learn" element={<Learn />} />
     </Routes>
   </Router>,
   document.getElementById("root")
