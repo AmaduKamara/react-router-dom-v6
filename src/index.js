@@ -13,6 +13,7 @@ import Learn from "./pages/Learn";
 import Courses from "./components/Courses";
 import Bundles from "./components/Bundles";
 import CourseDetails from "./components/CourseDetails";
+import CoursePriceDetails from "./components/CoursePriceDetails";
 
 ReactDOM.render(
   <Router>
@@ -25,6 +26,7 @@ ReactDOM.render(
         </Route>
         <Route path="bundles" element={<Bundles />} />
       </Route>
+      <Route path="/course-price-details" element={<CoursePriceDetails />} />
     </Routes>
   </Router>,
   document.getElementById("root")
