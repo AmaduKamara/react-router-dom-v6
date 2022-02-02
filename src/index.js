@@ -12,6 +12,7 @@ import {
 import Learn from "./pages/Learn";
 import Courses from "./components/Courses";
 import Bundles from "./components/Bundles";
+import CourseDetails from "./components/CourseDetails";
 
 ReactDOM.render(
   <Router>
@@ -20,7 +21,7 @@ ReactDOM.render(
       <Route path="/myapps" element={<Navigate replace to="/learn" />} />
       <Route path="learn" element={<Learn />}>
         <Route path="courses" element={<Courses />}>
-          <Route path=":courseid" />
+          <Route path=":courseid" element={<CourseDetails />} />
         </Route>
         <Route path="bundles" element={<Bundles />} />
       </Route>

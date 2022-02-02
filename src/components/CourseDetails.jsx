@@ -1,9 +1,12 @@
-import React from "react";
+import { useParams } from "react-router-dom";
 
-const CourseDetails = () => (
-  <div>
-    <h3>Course detail display here: DI from params</h3>
-  </div>
-);
+const CourseDetails = () => {
+  const { courseid } = useParams();
+  return (
+    <div>
+      <h3>Course detail display here - URL: {courseid}</h3>
+    </div>
+  );
+};
 
 export default CourseDetails;
