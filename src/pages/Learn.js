@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Learn = () => (
   <div className="container mx-auto my-16 text-center">
@@ -11,8 +11,12 @@ const Learn = () => (
         Courses
       </Link>
       <Link className="mx-10 border py-3 px-6 shadow-lg" to="/learn/bundles">
-        Courses
+        Bundles
       </Link>
+    </div>
+
+    <div className="mt-10">
+      <Outlet />
     </div>
   </div>
 );

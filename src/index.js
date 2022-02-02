@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import Learn from "./pages/Learn";
 import Courses from "./components/Courses";
+import Bundles from "./components/Bundles";
 
 ReactDOM.render(
   <Router>
@@ -18,7 +19,10 @@ ReactDOM.render(
       <Route path="/" element={<Home />} />
       <Route path="/myapps" element={<Navigate replace to="/learn" />} />
       <Route path="learn" element={<Learn />}>
-        <Route path="courses" element={<Courses />} />
+        <Route path="courses" element={<Courses />}>
+          <Route path=":courseid" />
+        </Route>
+        <Route path="bundles" element={<Bundles />} />
       </Route>
     </Routes>
   </Router>,
