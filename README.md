@@ -1,6 +1,6 @@
 # Getting started with React Router Dom v6
 
-This is a crash course onlearning the new react-router-dom v6 package
+This is a crash course on learning the new react-router-dom v6 package
 
 ## Instructor
 
